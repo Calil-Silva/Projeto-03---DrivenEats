@@ -1,17 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    color: #fff;
+    color: rgb(238, 238, 238);
 }
 
-.header1 {
+.header {
     font-family: 'Righteous', cursive;
     font-size: 44px;
-}
-
-.header2 {
-    font-family: 'Righteous', cursive;
-    font-size: 26px;
 }
 
 /* TOPO - início */
@@ -22,11 +17,33 @@ body {
     box-shadow: 0 1px 10px rgb(0, 0, 0);
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
 }
-
 .margin {
+    margin-left: 21px;
+}
+/* TOPO - fim */
+
+/* Menus - início */
+.menus {
+    margin-top: 123px;
+}
+.title {
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    margin-left: 21px;
+}
+.menu {
+    width: 172px;
+    height: 216px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin: 17px 16px 27px 0;
+}
+.pratos {
+    display: flex;
     margin-left: 21px;
 }
