@@ -1,7 +1,32 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #fff;
 }
 
-.headers {
+.header1 {
     font-family: 'Righteous', cursive;
+    font-size: 44px;
+}
+
+.header2 {
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+}
+
+/* TOPO - início */
+.topBar {
+    background-color: rgba(207, 43, 43, 1);
+    height: 92px;
+    width: 100vw;
+    box-shadow: 0 1px 10px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.margin {
+    margin-left: 21px;
 }
