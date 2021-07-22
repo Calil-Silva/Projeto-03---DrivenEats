@@ -29,6 +29,7 @@ body {
 /* Menus - início */
 .menus {
     margin-top: 123px;
+    margin-bottom: 108px;
 }
 .title {
     font-family: 'Righteous', cursive;
@@ -43,14 +44,9 @@ body {
     border-radius: 9px;
     margin: 17px 16px 27px 0;
 }
-
-.opcoes .menu:last-child {
-    margin-bottom: ;
-}
 .opcoes {
     display: flex;
     margin-left: 21px;
-    margin-right: 21px;
 }
 .font1 {
     font-size: 16px;
@@ -83,3 +79,33 @@ body {
     overflow-x: scroll;
 }
 /* Menus - fim */
+
+/* BOTTOMBAR - início */
+.bottomBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 92px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 1em rgba(0, 0, 0, .25);
+}
+.selecionarPedidos {
+    height: 61px;
+    width: 364px;
+    background: rgba(203, 203, 203, 1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    font-size: 20px;
+    
+}
+
+.selecionarPedidos h3{
+    margin: 80px;
+}
