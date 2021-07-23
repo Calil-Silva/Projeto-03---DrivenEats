@@ -34,7 +34,6 @@ body {
 .menus {
     margin-top: 123px;
     margin-bottom: 108px;
-
 }
 .title {
     font-family: 'Righteous', cursive;
@@ -42,48 +41,27 @@ body {
     color: rgb(0, 0, 0);
     margin-left: 21px;
 }
-button {
-    border: none;
-    background-color: #fff;
-    padding: 0;
-    margin: 0;
-}
-.menu {
-    width: 172px;
-    height: 216px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
-    margin: 17px 16px 27px 0;
+.scroll {   
+    overflow-x: scroll;
 }
 .opcoes {
     display: flex;
     margin-left: 21px;
-    margin-right: 21px;
 }
-.font1 {
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    color: rgba(51, 51, 51, 1);
-    margin: 0 auto 10px 14px;
-}
-.font2 {
-    width: 100%;
-    font-size: 15px;
-    color: rgba(166, 166, 166, 1);
-    margin: 0 14px 10px auto;
-}
-.font3 {
-    width: 100%;
-    font-size: 16px;
-    color: black;
-    margin: 0 auto 0 auto;
+button {
+    border: none;
+    background-color: #fff;
+    padding: 14px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .foto {
     width: 144px;
     height: 87px;
-    margin: 0px auto 8px auto;
-}
+    margin-bottom: 8px;
+}   
 .description {
     height: 40%;
     display: flex;
@@ -93,9 +71,30 @@ button {
     width: 144px;
     margin: 0 auto;
 }
-.scroll {   
-    overflow-x: scroll;
-    width: 414px;
+.menu {
+    width: 172px;
+    height: 216px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin: 17px 16px 27px 0;
+}
+.font1 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+    margin: 0 auto 10px auto;
+}
+.font2 {
+    width: 100%;
+    font-size: 15px;
+    color: rgba(166, 166, 166, 1);
+    margin-bottom: 10px;
+}
+.font3 {
+    width: 100%;
+    font-size: 16px;
+    color: black;
 }
 /* Menus - fim */
 
@@ -122,9 +121,10 @@ button {
     justify-content: center;
     margin: 50px;
     font-size: 20px;
-    
 }
 .selecionarPedidos h3{
-    margin: 80px;
+    height: 40px;
+    width: 194px;
+    margin: 60px;
 }
 /* BOTTOMBAR - final */
