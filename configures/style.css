@@ -41,12 +41,9 @@ body {
     color: rgb(0, 0, 0);
     margin-left: 21px;
 }
-.scroll {   
-    overflow-x: scroll;
-}
 .opcoes {
     display: flex;
-    margin-left: 21px;
+    overflow-x: scroll;
 }
 button {
     border: none;
@@ -56,6 +53,12 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+button:first-child {
+    margin-left: 21px;
+}
+button:last-child {
+    margin-right: 21px;
 }
 .foto {
     width: 144px;
