@@ -207,23 +207,3 @@ function teste15() {
     }
 }
 //Sobremesas final
-
-//Fechar pedido - início
-let pratos = selecionarAtivo || selecionarAtivo2 || selecionarAtivo3 || selecionarAtivo4 || selecionarAtivo5;
-let bebidas = selecionarAtivo6 || selecionarAtivo7 || selecionarAtivo8 || selecionarAtivo9 || selecionarAtivo10;
-let sobremesas = selecionarAtivo11 || selecionarAtivo12 || selecionarAtivo13 || selecionarAtivo14 || selecionarAtivo15;
-
-let p = true || false || false;
-let b = false || false || true;
-let s = false || true || false;
-
-function fecharPedido() {
-    if(pratos && bebidas && sobremesas) {
-        document.querySelector("h3").innerHTML = "Fechar pedido";
-        document.querySelector(".selecionarPedidos").style.backgroundColor = "rgba(50, 183, 47, 1)";
-
-    }
-}
-
-fecharPedido();
-//Fechar pedido - final;
