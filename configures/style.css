@@ -24,6 +24,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 .margin {
     margin-left: 21px;
@@ -41,7 +42,15 @@ body {
     color: rgb(0, 0, 0);
     margin-left: 21px;
 }
-.opcoes {
+.pratos {
+    display: flex;
+    overflow-x: scroll;
+}
+.bebidas {
+    display: flex;
+    overflow-x: scroll;
+}
+.sobremesas {
     display: flex;
     overflow-x: scroll;
 }
@@ -53,6 +62,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
 }
 button:first-child {
     margin-left: 21px;
@@ -60,19 +70,25 @@ button:first-child {
 button:last-child {
     margin-right: 21px;
 }
+#icon {
+    position: absolute;
+    right: 14px;
+    bottom: 11px;
+}
 .foto {
     width: 144px;
     height: 87px;
     margin-bottom: 8px;
 }   
 .description {
-    height: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: start;
     width: 144px;
     margin: 0 auto;
+    position: relative;
 }
 .menu {
     width: 172px;
@@ -125,9 +141,33 @@ button:last-child {
     margin: 50px;
     font-size: 20px;
 }
-.selecionarPedidos h3{
-    height: 40px;
+h3{
+    display: inline-block;
     width: 194px;
-    margin: 60px;
+    margin-right: 60px;
+    margin-left: 60px;
+    text-align: center;
 }
 /* BOTTOMBAR - final */
+
+.boxShadowVerde {
+    box-shadow: 0 0 0 5px rgba(50, 183, 47, 1) inset;
+}
+
+ion-icon {
+    background-color: #fff;
+    color: rgba(50, 183, 47, 1);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.esconder {
+    display: none;
+}
+
+.boxShadowVerde .esconder {
+    display: initial;
+}
+

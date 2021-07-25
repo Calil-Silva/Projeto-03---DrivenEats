@@ -35,8 +35,8 @@
             <div class="title">
                 <p>Primeiro, seu prato</p>
             </div>
-            <div class="opcoes">
-                <button class="menu" id="bordas" onclick="teste();">
+            <div class="pratos">
+                <button class="menu" onclick="pratoSelecionado(this);">
                     <div class="foto">
                         <img src="/files/frangoAssado.png" alt="frango assado">
                     </div>
@@ -51,8 +51,12 @@
                             <p>R$ 14,90</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+
                 </button>
-                <button class="menu" id="bordas2" onclick="teste2();">
+                <button class="menu" onclick="pratoSelecionado(this);">
                     <div class="foto">
                         <img src="/files/frangoAssado.png" alt="frango assado">
                     </div>
@@ -67,8 +71,11 @@
                             <p>R$ 11,99</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
-                <button class="menu" id="bordas3" onclick="teste3();">
+                <button class="menu" onclick="pratoSelecionado(this);">
                     <div class="foto">
                         <img src="/files/frangoAssado.png" alt="frango assado">
                     </div>
@@ -83,8 +90,11 @@
                             <p>R$ 25,40</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
-                <button class="menu" id="bordas4" onclick="teste4();">
+                <button class="menu" onclick="pratoSelecionado(this);">
                     <div class="foto">
                         <img src="/files/frangoAssado.png" alt="frango assado">
                     </div>
@@ -99,8 +109,11 @@
                             <p>R$ 17,00</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
-                <button class="menu" id="bordas5" onclick="teste5();">
+                <button class="menu" onclick="pratoSelecionado(this);">
                     <div class="foto">
                         <img src="/files/frangoAssado.png" alt="frango assado">
                     </div>
@@ -115,18 +128,21 @@
                             <p>R$ 32,40</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
             </div>
 
 
-        <!-- Prato - final -->
+            <!-- Prato - final -->
 
-        <!-- Bebida - início -->
-        <div class="title">
-            <p>Agora, sua bebida</p>
-        </div>
-            <div class="opcoes">
-                <button class="menu" id="bordas6" onclick="teste6();">
+            <!-- Bebida - início -->
+            <div class="title">
+                <p>Agora, sua bebida</p>
+            </div>
+            <div class="bebidas">
+                <button class="menu" onclick="bebidaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/bebida.png" alt="frango assado">
                     </div>
@@ -141,8 +157,11 @@
                             <p>R$ 4,90</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
-                <button class="menu" id="bordas7" onclick="teste7();">
+                <button class="menu" onclick="bebidaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/bebida.png" alt="frango assado">
                     </div>
@@ -157,8 +176,11 @@
                             <p>R$ 7,80</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
-                <button class="menu" id="bordas8" onclick="teste8();">
+                <button class="menu" onclick="bebidaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/bebida.png" alt="frango assado">
                     </div>
@@ -173,8 +195,11 @@
                             <p>R$ 15,00</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
-                <button class="menu" id="bordas9" onclick="teste9();">
+                <button class="menu" onclick="bebidaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/bebida.png" alt="frango assado">
                     </div>
@@ -189,8 +214,11 @@
                             <p>R$ 21,00</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
-                <button class="menu" id="bordas10" onclick="teste10();">
+                <button class="menu" onclick="bebidaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/bebida.png" alt="frango assado">
                     </div>
@@ -205,17 +233,20 @@
                             <p>R$ 9,50</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
             </div>
 
-        <!-- Bebida - final -->
+            <!-- Bebida - final -->
 
-        <!-- Sobremesa - início -->
-        <div class="title">
-            <p>Por fim, sua sobremesa</p>
-        </div>
-            <div class="opcoes">
-                <button class="menu" id="bordas11" onclick="teste11();">
+            <!-- Sobremesa - início -->
+            <div class="title">
+                <p>Por fim, sua sobremesa</p>
+            </div>
+            <div class="sobremesas">
+                <button class="menu" onclick="sobremesaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/sobremesa.png" alt="frango assado">
                     </div>
@@ -230,8 +261,11 @@
                             <p>R$ 7,90</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
-                <button class="menu" id="bordas12" onclick="teste12();">
+                <button class="menu" onclick="sobremesaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/sobremesa.png" alt="frango assado">
                     </div>
@@ -246,8 +280,11 @@
                             <p>R$ 15,99</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
-                <button class="menu" id="bordas13" onclick="teste13();">
+                <button class="menu" onclick="sobremesaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/sobremesa.png" alt="frango assado">
                     </div>
@@ -262,8 +299,11 @@
                             <p>R$ 24,90</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
-                <button class="menu" id="bordas14" onclick="teste14();">
+                <button class="menu" onclick="sobremesaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/sobremesa.png" alt="frango assado">
                     </div>
@@ -278,8 +318,11 @@
                             <p>R$ 10,40</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
-                <button class="menu" id="bordas15" onclick="teste15();">
+                <button class="menu" onclick="sobremesaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/sobremesa.png" alt="frango assado">
                     </div>
@@ -294,22 +337,27 @@
                             <p>R$ 27,90</p>
                         </div>
                     </div>
+                    <div class="esconder" id="icon">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
             </div>
 
-        <!-- Sobremesa- final -->
+            <!-- Sobremesa- final -->
 
-    </div>
-    <!-- Menus - final -->
+        </div>
+        <!-- Menus - final -->
 
-    <!-- BOTTOMBAR - início -->
-    <div class="bottomBar">
-        <div class="selecionarPedidos">
-            <h3>Selecione os 3 itens para fechar o pedido</h3>
+        <!-- BOTTOMBAR - início -->
+        <div class="bottomBar">
+            <div class="selecionarPedidos">
+                <h3>Selecione os 3 itens para fechar o pedido</h3>
+            </div>
         </div>
     </div>
-    </div>
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
