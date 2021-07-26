@@ -68,6 +68,9 @@ function sobremesaSelecionada(sobremesas) {
 document.querySelector(".pedidosSelecionados").addEventListener("click", enviarMensagem);
 
 function enviarMensagem() {
+    const nome = prompt("Por gentileza, digite seu nome abaixo.");
+    const endereço = prompt("Agora, seu endereço.")
+
     precoPrato = document.querySelector(".boxShadowVerde .a").innerHTML;
     precoPrato = (Number(precoPrato.replace(",", ".").replace("R$", "").replace("\n", "").replace("<p>", "").replace("</p>", "").replace("\n", ""))).toFixed(2);
 
@@ -77,7 +80,7 @@ function enviarMensagem() {
     precoSobremesa = document.querySelector(".boxShadowVerde .c").innerHTML;
     precoSobremesa = (Number(precoSobremesa.replace(",", ".").replace("R$", "").replace("\n", "").replace("<p>", "").replace("</p>", "").replace("\n", ""))).toFixed(2);
 
-    let mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${(Number(precoPrato) + Number(precoBebida) + Number(precoSobremesa)).toFixed(2)}`;
+    let mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${(Number(precoPrato) + Number(precoBebida) + Number(precoSobremesa)).toFixed(2)}\n\nNome: ${nome}\nEndereço: ${endereço}`;
 
     let msgEncode = encodeURIComponent(mensagem);
 
