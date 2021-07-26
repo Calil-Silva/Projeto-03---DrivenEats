@@ -1,9 +1,9 @@
 let pratoEscolhido;
 let bebidaEscolhida;
 let sobremesaEscolhida;
-let precoPrato;
 let msgEncode;
 
+// Aplicação de bordas - início
 function pratoSelecionado(pratos) {
     pratoEscolhido = pratos;
     const removerPrato = document.querySelector(".pratos .boxShadowVerde");
@@ -64,12 +64,12 @@ function sobremesaSelecionada(sobremesas) {
         pedidosFinalizados2.classList.remove("esconder");
     }
 }
+// Aplicação de bordas - final
 
-document.querySelector(".pedidosSelecionados").addEventListener("click", enviarMensagem);
+// Preparar pedido - início
+document.querySelector(".pedidosSelecionados").addEventListener("click", prepararMensagem);
 
-function enviarMensagem() {
-    const nome = prompt("Por gentileza, digite seu nome abaixo.");
-    const endereço = prompt("Agora, seu endereço.")
+function prepararMensagem() {
 
     precoPrato = document.querySelector(".boxShadowVerde .a").innerHTML;
     precoPrato = (Number(precoPrato.replace(",", ".").replace("R$", "").replace("\n", "").replace("<p>", "").replace("</p>", "").replace("\n", ""))).toFixed(2);
@@ -80,6 +80,33 @@ function enviarMensagem() {
     precoSobremesa = document.querySelector(".boxShadowVerde .c").innerHTML;
     precoSobremesa = (Number(precoSobremesa.replace(",", ".").replace("R$", "").replace("\n", "").replace("<p>", "").replace("</p>", "").replace("\n", ""))).toFixed(2);
 
+    confirmarPedido();
+}
+
+function confirmarPedido() {
+    let confirmacao = document.querySelector(".confirmarPedido");
+    if (confirmacao.classList.contains("esconder")) {
+        confirmacao.classList.remove("esconder");
+    }
+
+    document.querySelector("#checkPrato").innerHTML = prato;
+    document.querySelector("#checkPrecoPrato").innerHTML = precoPrato;
+
+    document.querySelector("#checkBebida").innerHTML = bebida;
+    document.querySelector("#checkPrecoBebida").innerHTML = precoBebida;
+
+    document.querySelector("#checkSobremesa").innerHTML = sobremesa;
+    document.querySelector("#checkPrecoSobremesa").innerHTML = precoSobremesa;
+
+    document.querySelector("#checkTotal").innerHTML = "TOTAL";
+    document.querySelector("#checkPrecoTotal").innerHTML = `R$ ${(Number(precoPrato) + Number(precoBebida) + Number(precoSobremesa)).toFixed(2)}`;
+}
+
+function enviarMensagem() {
+    const nome = prompt("Por gentileza, digite seu nome abaixo.");
+
+    const endereço = prompt("Agora, seu endereço.")
+
     let mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${(Number(precoPrato) + Number(precoBebida) + Number(precoSobremesa)).toFixed(2)}\n\nNome: ${nome}\nEndereço: ${endereço}`;
 
     let msgEncode = encodeURIComponent(mensagem);
@@ -87,6 +114,11 @@ function enviarMensagem() {
     open('https://wa.me/?text=' + msgEncode, "_self");
 }
 
+function cancelarPedido() {
+    let confirmacao = document.querySelector(".confirmarPedido");
+    confirmacao.classList.add("esconder");
+}
+// Preparar pedido - final
 
 
 

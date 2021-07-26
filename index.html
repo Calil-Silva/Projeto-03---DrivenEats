@@ -341,6 +341,32 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </button>
+
+                <div class="confirmarPedido esconder">
+                    <div class="tituloConfirmação">
+                        <p>Confirme seu pedido</p>
+                    </div>
+                    <div class="confirmacao">
+                        <div id="checkPrato"></div>
+                        <div id="checkPrecoPrato"></div>
+                    </div>
+                    <div class="confirmacao">
+                        <div id="checkBebida"></div>
+                        <div id="checkPrecoBebida"></div>
+                    </div>
+                    <div class="confirmacao">
+                        <div id="checkSobremesa"></div>
+                        <div id="checkPrecoSobremesa"></div>
+                    </div>
+                    <div class="confirmacao">
+                        <div id="checkTotal"></div>
+                        <div id="checkPrecoTotal"></div>
+                    </div>
+                    <div class="confirmar">
+                        <button onclick="enviarMensagem();">Tudo certo, pode pedir!</button>
+                        <button onclick="cancelarPedido();">Cancelar</button>
+                    </div>
+                </div>
             </div>
 
             <!-- Sobremesa- final -->
@@ -356,7 +382,10 @@
             <div class="pedidosSelecionados esconder">
                 <a href="#">Finalizar pedido</a>
             </div>
+
         </div>
+
+
     </div>
     <script src="./_configures/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

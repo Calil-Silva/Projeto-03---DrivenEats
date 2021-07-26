@@ -24,7 +24,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 .margin {
     margin-left: 21px;
@@ -35,6 +35,7 @@ body {
 .menus {
     margin-top: 123px;
     margin-bottom: 108px;
+    position: relative;
 }
 .title {
     font-family: 'Righteous', cursive;
@@ -129,6 +130,7 @@ button:last-child {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 1em rgba(0, 0, 0, .25);
+    z-index: 2;
 }
 .selecionarPedidos {
     height: 61px;
@@ -167,6 +169,7 @@ a {
 }
 /* BOTTOMBAR - final */
 
+/* Aplicar borda verde - início */
 .boxShadowVerde {
     box-shadow: 0 0 0 5px rgba(50, 183, 47, 1) inset;
 }
@@ -187,3 +190,71 @@ ion-icon {
 .boxShadowVerde .esconder {
     display: initial;
 }
+/* Aplicar borda verde - final */
+
+/* Confirmar pedido - início */
+
+.confirmarPedido {
+    position: fixed;
+    bottom: calc(((100vh - 353px) / 2));
+    height: 353px;
+    width: 377px;
+    margin-left: 20px;
+    background: rgba(80, 208, 116, 1);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    padding: 25px;
+    border-radius: 9px;
+}
+
+.confirmacao {
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+    margin-bottom: 13px;
+    font-size: 22px;
+}
+
+.confirmacao:nth-child(5) {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.tituloConfirmação {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.confirmarPedido button:first-child {
+    margin: 30px 0 20px;
+    width: 100%;
+    border-radius: 100px;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    Color: rgba(80, 208, 116, 1);
+}
+
+.confirmar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirmar button:last-child {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    color: rgb(238, 238, 238);;
+}
+
+.sobremesas:last-child {
+    margin-right: 20px;
+}
+
+/* Confirmar pedido - final */
