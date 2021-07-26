@@ -26,7 +26,7 @@
                 <h2>Sua comida em 6 minutos</h2>
             </div>
         </div>
-        <!-- TOPBAR - fim -->
+        <!-- TOPBAR - fim -->   
 
         <!-- Menus - início -->
         <div class="menus">
@@ -36,7 +36,7 @@
                 <p>Primeiro, seu prato</p>
             </div>
             <div class="pratos">
-                <button class="menu" onclick="pratoSelecionado(this);">
+                <button class="menu" id="frango" onclick="pratoSelecionado(this);">
                     <div class="foto">
                         <img src="/files/frangoAssado.png" alt="frango assado">
                     </div>
@@ -47,8 +47,8 @@
                         <div class="font2">
                             <p>Um pouco de batata, um pouco de salada</p>
                         </div>
-                        <div class="font3">
-                            <p>R$ 14,90</p>
+                        <div class="font3 a">
+                            <p>$ 14,90</p>
                         </div>
                     </div>
                     <div class="esconder" id="icon">
@@ -56,7 +56,7 @@
                     </div>
 
                 </button>
-                <button class="menu" onclick="pratoSelecionado(this);">
+                <button class="menu" id="carne" onclick="pratoSelecionado(this);">
                     <div class="foto">
                         <img src="/files/frangoAssado.png" alt="frango assado">
                     </div>
@@ -67,7 +67,7 @@
                         <div class="font2">
                             <p>Um pouco de batata, um pouco de salada</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 a">
                             <p>R$ 11,99</p>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </button>
-                <button class="menu" onclick="pratoSelecionado(this);">
+                <button class="menu" id="peixe" onclick="pratoSelecionado(this);">
                     <div class="foto">
                         <img src="/files/frangoAssado.png" alt="frango assado">
                     </div>
@@ -86,7 +86,7 @@
                         <div class="font2">
                             <p>Um pouco de batata, um pouco de salada</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 a">
                             <p>R$ 25,40</p>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </button>
-                <button class="menu" onclick="pratoSelecionado(this);">
+                <button class="menu" id="ovos" onclick="pratoSelecionado(this);">
                     <div class="foto">
                         <img src="/files/frangoAssado.png" alt="frango assado">
                     </div>
@@ -105,7 +105,7 @@
                         <div class="font2">
                             <p>Um pouco de batata, um pouco de salada</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 a">
                             <p>R$ 17,00</p>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </button>
-                <button class="menu" onclick="pratoSelecionado(this);">
+                <button class="menu" id="soja" onclick="pratoSelecionado(this);">
                     <div class="foto">
                         <img src="/files/frangoAssado.png" alt="frango assado">
                     </div>
@@ -124,7 +124,7 @@
                         <div class="font2">
                             <p>Um pouco de batata, um pouco de salada</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 a">
                             <p>R$ 32,40</p>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                 <p>Agora, sua bebida</p>
             </div>
             <div class="bebidas">
-                <button class="menu" onclick="bebidaSelecionada(this);">
+                <button class="menu" id="coca" onclick="bebidaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/bebida.png" alt="frango assado">
                     </div>
@@ -153,7 +153,7 @@
                         <div class="font2">
                             <p>Lata 350ml</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 b">
                             <p>R$ 4,90</p>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </button>
-                <button class="menu" onclick="bebidaSelecionada(this);">
+                <button class="menu" id="guarana" onclick="bebidaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/bebida.png" alt="frango assado">
                     </div>
@@ -172,7 +172,7 @@
                         <div class="font2">
                             <p>Lata 350ml</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 b">
                             <p>R$ 7,80</p>
                         </div>
                     </div>
@@ -180,7 +180,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </button>
-                <button class="menu" onclick="bebidaSelecionada(this);">
+                <button class="menu" id="fanta" onclick="bebidaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/bebida.png" alt="frango assado">
                     </div>
@@ -191,7 +191,7 @@
                         <div class="font2">
                             <p>Lata 350ml</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 b">
                             <p>R$ 15,00</p>
                         </div>
                     </div>
@@ -199,7 +199,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </button>
-                <button class="menu" onclick="bebidaSelecionada(this);">
+                <button class="menu" id="dolly" onclick="bebidaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/bebida.png" alt="frango assado">
                     </div>
@@ -210,7 +210,7 @@
                         <div class="font2">
                             <p>Lata 350ml</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 b">
                             <p>R$ 21,00</p>
                         </div>
                     </div>
@@ -218,7 +218,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </button>
-                <button class="menu" onclick="bebidaSelecionada(this);">
+                <button class="menu" id="chá" onclick="bebidaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/bebida.png" alt="frango assado">
                     </div>
@@ -229,7 +229,7 @@
                         <div class="font2">
                             <p>Lata 350ml</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 b">
                             <p>R$ 9,50</p>
                         </div>
                     </div>
@@ -246,7 +246,7 @@
                 <p>Por fim, sua sobremesa</p>
             </div>
             <div class="sobremesas">
-                <button class="menu" onclick="sobremesaSelecionada(this);">
+                <button class="menu" id="brigadeiro" onclick="sobremesaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/sobremesa.png" alt="frango assado">
                     </div>
@@ -257,7 +257,7 @@
                         <div class="font2">
                             <p>Apenas pudim</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 c">
                             <p>R$ 7,90</p>
                         </div>
                     </div>
@@ -265,7 +265,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </button>
-                <button class="menu" onclick="sobremesaSelecionada(this);">
+                <button class="menu" id="pudim" onclick="sobremesaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/sobremesa.png" alt="frango assado">
                     </div>
@@ -276,7 +276,7 @@
                         <div class="font2">
                             <p>Apenas pudim</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 c">
                             <p>R$ 15,99</p>
                         </div>
                     </div>
@@ -284,7 +284,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </button>
-                <button class="menu" onclick="sobremesaSelecionada(this);">
+                <button class="menu" id="bolo" onclick="sobremesaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/sobremesa.png" alt="frango assado">
                     </div>
@@ -295,7 +295,7 @@
                         <div class="font2">
                             <p>Apenas pudim</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 c">
                             <p>R$ 24,90</p>
                         </div>
                     </div>
@@ -303,7 +303,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </button>
-                <button class="menu" onclick="sobremesaSelecionada(this);">
+                <button class="menu" id="beijinho" onclick="sobremesaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/sobremesa.png" alt="frango assado">
                     </div>
@@ -314,7 +314,7 @@
                         <div class="font2">
                             <p>Apenas pudim</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 c">
                             <p>R$ 10,40</p>
                         </div>
                     </div>
@@ -322,7 +322,7 @@
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </button>
-                <button class="menu" onclick="sobremesaSelecionada(this);">
+                <button class="menu" id="frutas" onclick="sobremesaSelecionada(this);">
                     <div class="foto">
                         <img src="/files/sobremesa.png" alt="frango assado">
                     </div>
@@ -333,7 +333,7 @@
                         <div class="font2">
                             <p>Apenas pudim</p>
                         </div>
-                        <div class="font3">
+                        <div class="font3 c">
                             <p>R$ 27,90</p>
                         </div>
                     </div>
@@ -353,6 +353,9 @@
             <div class="selecionarPedidos">
                 <h3>Selecione os 3 itens para fechar o pedido</h3>
             </div>
+            <div class="pedidosSelecionados esconder">
+                <a href="#">Finalizar pedido</a>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
@@ -361,3 +364,5 @@
 </body>
 
 </html>
+
+<!-- https://wa.me/?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%3A%20%0A-%20Prato%3A%20Frango%20Yin%20Yang%20%0A-%20Bebida%3A%20Coquinha%20Gelada%20%0A-%20Sobremesa%3A%20Pudim%20%0ATotal%3A%20R%24%2027.70 -->

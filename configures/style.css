@@ -140,13 +140,30 @@ button:last-child {
     justify-content: center;
     margin: 50px;
     font-size: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
 }
-h3{
-    display: inline-block;
-    width: 194px;
-    margin-right: 60px;
-    margin-left: 60px;
-    text-align: center;
+.pedidosSelecionados {
+    display: flex;
+    height: 61px;
+    width: 364px;
+    background: rgba(203, 203, 203, 1);
+    border-radius: 50px;
+    margin: 50px;
+    font-size: 20px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(238, 238, 238);
+    background-color: rgba(50, 183, 47, 1);
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
 }
 /* BOTTOMBAR - final */
 
@@ -171,3 +188,9 @@ ion-icon {
     display: initial;
 }
 
+
+/* Olá, gostaria de fazer o pedido:
+- Prato: Frango Yin Yang
+- Bebida: Coquinha Gelada
+- Sobremesa: Pudim
+Total: R$ 27.70 */
