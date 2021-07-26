@@ -1,11 +1,11 @@
-let gafanhotos;
-let mariposas;
-let joaninhas;
+let pratoEscolhido;
+let bebidaEscolhida;
+let sobremesaEscolhida;
 let precoPrato;
 let msgEncode;
 
 function pratoSelecionado(pratos) {
-    gafanhotos = pratos;
+    pratoEscolhido = pratos;
     const removerPrato = document.querySelector(".pratos .boxShadowVerde");
     const pedidosFinalizados = document.querySelector(".selecionarPedidos");
     const pedidosFinalizados2 = document.querySelector(".pedidosSelecionados");
@@ -16,7 +16,7 @@ function pratoSelecionado(pratos) {
     pratos.classList.add("boxShadowVerde");
 
 
-    if (gafanhotos !== undefined && mariposas !== undefined && joaninhas !== undefined) {
+    if (pratoEscolhido !== undefined && bebidaEscolhida !== undefined && sobremesaEscolhida !== undefined) {
         prato = document.querySelector(".pratos .boxShadowVerde").id;
         bebida = document.querySelector(".bebidas .boxShadowVerde").id;
         sobremesa = document.querySelector(".sobremesas .boxShadowVerde").id;
@@ -25,8 +25,8 @@ function pratoSelecionado(pratos) {
     }
 }
 
-function bebidaSelecionada(bebidinhas) {
-    mariposas = bebidinhas;
+function bebidaSelecionada(bebidas) {
+    bebidaEscolhida = bebidas;
     const removerBebida = document.querySelector(".bebidas .boxShadowVerde");
     const pedidosFinalizados = document.querySelector(".selecionarPedidos");
     const pedidosFinalizados2 = document.querySelector(".pedidosSelecionados");
@@ -34,9 +34,9 @@ function bebidaSelecionada(bebidinhas) {
         removerBebida.classList.remove("boxShadowVerde");
     }
 
-    bebidinhas.classList.add("boxShadowVerde");
+    bebidas.classList.add("boxShadowVerde");
 
-    if (gafanhotos !== undefined && mariposas !== undefined && joaninhas !== undefined) {
+    if (pratoEscolhido !== undefined && bebidaEscolhida !== undefined && sobremesaEscolhida !== undefined) {
         prato = document.querySelector(".pratos .boxShadowVerde").id;
         bebida = document.querySelector(".bebidas .boxShadowVerde").id;
         sobremesa = document.querySelector(".sobremesas .boxShadowVerde").id;
@@ -45,8 +45,8 @@ function bebidaSelecionada(bebidinhas) {
     }
 }
 
-function sobremesaSelecionada(sobremesinhas) {
-    joaninhas = sobremesinhas;
+function sobremesaSelecionada(sobremesas) {
+    sobremesaEscolhida = sobremesas;
     const removerSobremesa = document.querySelector(".sobremesas .boxShadowVerde");
     const pedidosFinalizados = document.querySelector(".selecionarPedidos");
     const pedidosFinalizados2 = document.querySelector(".pedidosSelecionados");
@@ -54,9 +54,9 @@ function sobremesaSelecionada(sobremesinhas) {
         removerSobremesa.classList.remove("boxShadowVerde");
     }
 
-    sobremesinhas.classList.add("boxShadowVerde");
+    sobremesas.classList.add("boxShadowVerde");
 
-    if (gafanhotos !== undefined && mariposas !== undefined && joaninhas !== undefined) {
+    if (pratoEscolhido !== undefined && bebidaEscolhida !== undefined && sobremesaEscolhida !== undefined) {
         prato = document.querySelector(".pratos .boxShadowVerde").id;
         bebida = document.querySelector(".bebidas .boxShadowVerde").id;
         sobremesa = document.querySelector(".sobremesas .boxShadowVerde").id;
@@ -78,10 +78,13 @@ function enviarMensagem() {
     precoSobremesa = (Number(precoSobremesa.replace(",", ".").replace("R$", "").replace("\n", "").replace("<p>", "").replace("</p>", "").replace("\n", ""))).toFixed(2);
 
     let mensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${(Number(precoPrato) + Number(precoBebida) + Number(precoSobremesa)).toFixed(2)}`;
-    alert(msgEncode);
+
+    let msgEncode = encodeURIComponent(mensagem);
+
+    open('https://wa.me/?text=' + msgEncode, "_self");
 }
 
-let msgEncode = encodeURIComponent(mensagem);
+
 
 
 
